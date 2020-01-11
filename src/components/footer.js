@@ -1,10 +1,10 @@
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 import { FaLinkedin, FaGithub } from "react-icons/fa"
 
 const StyledFooter = styled.footer`
-  background-color: #663399;
+  background-color: #00499b;
   height: 15vh;
   width: 100%;
   color: white;
@@ -23,16 +23,18 @@ const StyledIconsDiv = styled.div`
 // import { Helmet } from "react-helmet"
 
 const Footer = () => (
-  <StyledFooter>
-    <StyledIconsDiv>
-      <a href="https://github.com/axon7" style={{ color: "white" }}>
-        <FaGithub style={{ marginRight: "10px" }} />
-      </a>
-      <a href="https://linkedin.com" style={{ color: "white" }}>
-        <FaLinkedin style={{ marginLeft: "10px" }} />
-      </a>
-    </StyledIconsDiv>
-  </StyledFooter>
+  <>
+    <StyledFooter>
+      <StyledIconsDiv>
+        <a href="https://github.com/axon7" style={{ color: "white" }}>
+          <FaGithub style={{ marginRight: "10px" }} />
+        </a>
+        <a href="https://linkedin.com" style={{ color: "white" }}>
+          <FaLinkedin style={{ marginLeft: "10px" }} />
+        </a>
+      </StyledIconsDiv>
+    </StyledFooter>
+  </>
 )
 
 export default Footer

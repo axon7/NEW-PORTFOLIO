@@ -28,25 +28,7 @@ module.exports = {
         // This path is relative to the root of the site.
       },
     },
-    // {
-    //   resolve: "gatsby-plugin-web-font-loader",
-    //   options: {
-    //     google: {
-    //       families: ["Nunito", "Montserrat"],
-    //     },
-    //   },
-    // },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Nunito`,
-            variants: [`400`, `700`],
-          },
-        ],
-      },
-    },
+
     // {
     //   resolve: `gatsby-plugin-typography`,
     //   options: {

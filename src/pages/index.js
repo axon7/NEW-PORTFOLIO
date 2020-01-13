@@ -6,6 +6,7 @@ import Button from "../components/Button"
 import lightning from "../images/lightning.svg"
 import { Link } from "gatsby"
 import ProjectList from "../components/ProjectList"
+import Technologies from "../components/Technologies"
 
 const StyledMain = styled.main`
   width: 100%;
@@ -48,7 +49,7 @@ const Lightning = styled.img`
 
 const StyledH1 = styled.h1`
   font-weight: 900;
-  font-size: 37px;
+  font-size: 2.6em;
   word-break: keep-all;
   margin-bottom: 0px;
 `
@@ -73,17 +74,13 @@ const IndexPage = () => (
             I’m a self-taught front-end developer focused on creating{" "}
             <b>clean</b>, <i>blazing fast</i> apps.
           </Intro>
-          <h4>My current stack of languages/technologies is:</h4>
-          <h5>
-            HTML5 - CSS3 - JAVASCRIPT - REACTJS - REDUX - STYLED COMPONENTS -
-            NODE.JS
-          </h5>
         </Text>
         <Button as={Link} to="/projects">
           SHOW PROJECTS
         </Button>
       </Content>
     </StyledMain>
+    <Technologies />
     <ProjectList />
   </Layout>
 )

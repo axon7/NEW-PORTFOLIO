@@ -20,22 +20,25 @@ const ProjectCard = styled.div`
   font-size: 14px;
   padding: 10%;
   margin-bottom: 50px;
+
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 `
 
 const Description = styled.p`
   margin-bottom: 50px;
 `
+
+const Image = styled.img`
+  box-shadow: 0px 12px 9px 0px rgba(0, 0, 0, 0.33);
+  width: 100%;
+  max-width: 500px;
+`
 const Project = props => (
   <>
     <ProjectCard>
       <h1>{props.title}</h1>
       <ProjectLink href={props.link}>
-        <img
-          src={props.image}
-          alt="implanty"
-          style={{ width: "100%", maxWidth: "500px" }}
-        />
+        <Image src={props.image} alt="implanty" />
       </ProjectLink>
       <Description>{props.text}</Description>
       <ButtonLink href={props.linkGithub}>GITHUB</ButtonLink>

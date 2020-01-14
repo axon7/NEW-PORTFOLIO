@@ -30,17 +30,20 @@ const ProjectsList = styled.section`
 const ProjectList = () => (
   <StyledWrapper>
     <ProjectsList>
-      <h1>Work</h1>
+      <h2>Work</h2>
       <Project
         title="Chingu Store"
-        link="wp.pl"
+        link="https://chingu-voyages.github.io/v9-geckos-team-12/"
         image={chingustore}
-        linkGithub="https://github.com/axon7/weather-app"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+        linkGithub="https://github.com/chingu-voyages/v9-geckos-team-12"
+        text="Application fetches clothes data from ASOS.com API. User can
+        search by name, sort, load more items and add them to the basket.
+        Chingu Store was created in the team of 3 people. I learned a lot about Git workflow and project management"
       />
       <Project
         title="Chatu-chatu"
         image={chatuchatu}
+        link="http://chatu-chatu.herokuapp.com/"
         linkGithub="https://github.com/axon7/chatu-chatu"
         text="Real-time chat with use of Node.js. Sockets provides a communication channel between
         a client and a server.
@@ -48,6 +51,7 @@ const ProjectList = () => (
       />
       <Project
         title="Weather App"
+        link="https://axon7.github.io/weather-app/"
         linkGithub="https://github.com/axon7/weather-app"
         image={weatherapp}
         text="Geolocation based weather application showing forecast from
@@ -55,10 +59,9 @@ const ProjectList = () => (
       />
       <Project
         title="IMPLANTY24"
-        link="wp.pl"
+        link="https://xd.adobe.com/view/02de1ca6-9b0d-4353-69ad-f2ed4e7a7cf0-74ef/?fullscreen"
         image={implanty24}
-        linkGithub="https://github.com/axon7/weather-app"
-        text="Website prototype for dental clinic made in Adobe XD "
+        text="Website desktop prototype for dental clinic made in Adobe XD "
       />
     </ProjectsList>
   </StyledWrapper>

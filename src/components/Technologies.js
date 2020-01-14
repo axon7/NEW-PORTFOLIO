@@ -7,8 +7,9 @@ import javascript from "../images/logos/javascript.svg"
 import react from "../images/logos/react.svg"
 import redux from "../images/logos/redux.svg"
 import nodejs from "../images/logos/nodejs.svg"
-
-const Wrapper = styled.div`
+import jest from "../images/logos/jest.svg"
+import gatsby from "../images/logos/gatsby.svg"
+const Wrapper = styled.section`
   margin-top: 50px;
   display: flex;
   flex-direction: column;
@@ -38,7 +39,7 @@ const StyledTechnologies = styled.div`
 const Technologies = () => {
   return (
     <Wrapper>
-      <h3>Current Technologies stack:</h3>
+      <h2>Current stack:</h2>
       <StyledTechnologies>
         <StyledIconAndText>
           <StyledIcon src={html5} />
@@ -63,6 +64,14 @@ const Technologies = () => {
         <StyledIconAndText>
           <StyledIcon src={nodejs} />
           <p>Node.js</p>
+        </StyledIconAndText>
+        <StyledIconAndText>
+          <StyledIcon src={jest} />
+          <p>Jest</p>
+        </StyledIconAndText>
+        <StyledIconAndText>
+          <StyledIcon src={gatsby} />
+          <p>Gatsby</p>
         </StyledIconAndText>
       </StyledTechnologies>
     </Wrapper>

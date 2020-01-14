@@ -40,6 +40,7 @@ const Text = styled.div`
 
 const Intro = styled.p`
   width: 63%;
+  line-height: 1.5em;
 `
 const Lightning = styled.img`
   margin-top: 50px;

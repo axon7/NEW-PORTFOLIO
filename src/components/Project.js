@@ -26,6 +26,8 @@ const ProjectCard = styled.div`
 
 const Description = styled.p`
   margin-bottom: 50px;
+  line-height: 1.5em;
+  text-align: justify;
 `
 
 const Image = styled.img`
@@ -36,7 +38,9 @@ const Image = styled.img`
 const Project = props => (
   <>
     <ProjectCard>
-      <h1>{props.title}</h1>
+      <h1 style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}>
+        {props.title}
+      </h1>
       <ProjectLink href={props.link}>
         <Image src={props.image} alt="implanty" />
       </ProjectLink>

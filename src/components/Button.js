@@ -7,7 +7,7 @@ const Button = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-
+  padding: 23px;
   background-color: #00499b;
   box-shadow: 0 10px 40px -15px black;
   color: white;

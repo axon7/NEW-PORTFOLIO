@@ -11,10 +11,12 @@ const StyledFooter = styled.footer`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  padding: 95px 0;
 `
 
 const StyledIconsDiv = styled.div`
-  font-size: 60px;
+  font-size: 50px;
   display: flex;
   justify-items: center;
   align-items: center;
@@ -33,6 +35,9 @@ const Footer = () => (
           <FaLinkedin style={{ marginLeft: "10px" }} />
         </a>
       </StyledIconsDiv>
+      <p style={{ fontSize: "0.75em" }}>
+        © 2020 Jakub Zając. All rights reserved.
+      </p>
     </StyledFooter>
   </>
 )

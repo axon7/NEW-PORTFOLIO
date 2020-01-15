@@ -1,7 +1,7 @@
 import React from "react"
-import { createGlobalStyle } from "styled-components"
+import styled, { createGlobalStyle } from "styled-components"
+
 import Footer from "./footer"
-import { Link } from "gatsby"
 
 const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap');
@@ -17,12 +17,18 @@ body {
 } 
 `
 
+const LayoutWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
 const Layout = ({ children }) => {
   return (
     <>
       <GlobalStyle />
 
-      <main>{children}</main>
+      <LayoutWrapper>{children}</LayoutWrapper>
       <Footer />
     </>
   )

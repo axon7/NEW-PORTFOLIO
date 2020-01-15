@@ -7,6 +7,7 @@ import lightning from "../images/lightning.svg"
 import { Link } from "gatsby"
 import ProjectList from "../components/ProjectList"
 import Technologies from "../components/Technologies"
+import Contact from "../components/Contact"
 
 const StyledMain = styled.main`
   width: 100%;
@@ -84,6 +85,7 @@ const IndexPage = () => (
     </StyledMain>
     <Technologies />
     <ProjectList />
+    <Contact />
   </Layout>
 )
 

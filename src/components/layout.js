@@ -2,7 +2,6 @@ import React from "react"
 import { createGlobalStyle } from "styled-components"
 import Footer from "./footer"
 import { Link } from "gatsby"
-import Contact from "./Contact"
 
 const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap');
@@ -24,7 +23,6 @@ const Layout = ({ children }) => {
       <GlobalStyle />
 
       <main>{children}</main>
-      <Contact />
       <Footer />
     </>
   )

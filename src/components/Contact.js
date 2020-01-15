@@ -5,11 +5,12 @@ import { Link } from "gatsby"
 
 const StyledDiv = styled.div`
   background-color: #ff9e2c;
-  height: 100px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 200px;
+  flex-direction: column;
 `
 
 const Contact = () => {

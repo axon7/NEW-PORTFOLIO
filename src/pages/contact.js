@@ -6,17 +6,16 @@ import { Link } from "gatsby"
 
 const StyledContactPage = styled.div`
   background-color: #ff9e2c;
+  padding: 15%;
 
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
 `
 
 const ContactForm = styled.form`
   width: 75vw;
-
   max-width: 30em;
   display: flex;
   flex-direction: column;
@@ -46,10 +45,11 @@ const SubmitButton = styled.button`
 
 const contact = () => {
   return (
-    <StyledContactPage>
-      <Layout>
+    <Layout>
+      <StyledContactPage>
         <SEO title="contact" />
         <h1>Contact</h1>
+        <p>Wanna talk? Send me an email through the form below</p>
         <ContactForm
           name="contact"
           method="post"
@@ -61,12 +61,12 @@ const contact = () => {
           <label>Your e-mail</label>
           <ContactInput name="email" type="email" />
           <label>Message</label>
-          <ContactTextarea rows="6" name="message" />
+          <ContactTextarea rows="6" name="message" required />
           <SubmitButton>SUBMIT</SubmitButton>
           <Link to="/">Go back</Link>
         </ContactForm>
-      </Layout>
-    </StyledContactPage>
+      </StyledContactPage>
+    </Layout>
   )
 }
 

@@ -1,32 +1,18 @@
 import React, { useState } from "react"
 import styled from "styled-components"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
+import { Link, animateScroll as scroll } from "react-scroll"
 
 const StyledHeader = styled.div`
   width: 100%;
   height: 50px;
-  position: absolute;
+  position: fixed;
   z-index: 2;
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
   background: #ff9e2c;
   /* background-color: black; */
 `
-const ToggleMenuLine = styled.div`
-  width: 30px;
-  height: 4px;
-  background-color: white;
-  margin-top: 4px;
-  border-radius: 100px;
-`
 
-const ToggleMenu = styled.a`
-  width: 30px;
-  height: 22px;
-  right: 12px;
-  top: 11px;
-  position: absolute;
-  color: white;
-`
 const StyledBurger = styled.button`
   position: absolute;
   top: 10px;
@@ -54,7 +40,27 @@ const StyledBurger = styled.button`
     transition: all 0.3s linear;
     position: relative;
     transform-origin: 1px;
+    :first-child {
+      transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
+    }
+
+    :nth-child(2) {
+      opacity: ${({ open }) => (open ? "0" : "1")};
+      display: ${({ open }) => (open ? "translateX(20px)" : "translateX(0)")};
+    }
+
+    :nth-child(3) {
+      transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
+    }
   }
+`
+
+const StyledLink = styled(Link)`
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+  margin: 10px;
+  font-weight: bold;
 `
 
 const StyledNav = styled.nav`
@@ -68,8 +74,10 @@ const StyledNav = styled.nav`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: transform 0.3s ease-in-out;
+
   /* transform: translateX(-100%); */
-  transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
+  transform: ${({ open }) => (open ? "translateY(0)" : "translateY(-100%)")};
 `
 
 const Header = () => {
@@ -81,15 +89,39 @@ const Header = () => {
         <div />
         <div />
       </StyledBurger>
-      {/* <ToggleMenu>
-        <ToggleMenuLine></ToggleMenuLine>
-        <ToggleMenuLine></ToggleMenuLine>
-        <ToggleMenuLine></ToggleMenuLine>
-      </ToggleMenu> */}
+
       <StyledNav open={open}>
-        <Link to="/">Home</Link>
-        <Link to="/">Projects</Link>
-        <Link to="/">Contact</Link>
+        <StyledLink
+          onClick={() => setOpen(!open)}
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
+          Home
+        </StyledLink>
+        <StyledLink
+          onClick={() => setOpen(!open)}
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
+          Projects
+        </StyledLink>
+
+        <StyledLink
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          onClick={() => setOpen(!open)}
+        >
+          Contact
+        </StyledLink>
       </StyledNav>
     </StyledHeader>
   )

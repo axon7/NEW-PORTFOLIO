@@ -47,7 +47,12 @@ const Contact = () => {
   return (
     <StyledContactPage>
       <h1 id="contact">Contact</h1>
-      <p>Wanna talk? Send me an email through the form below 😉</p>
+      <p>
+        Wanna talk? Send me an email through the form below{" "}
+        <span role="img" aria-label="blink emoji">
+          😉
+        </span>
+      </p>
       <ContactForm
         name="contact"
         method="post"
@@ -56,9 +61,9 @@ const Contact = () => {
       >
         <label htmlFor="name">Name</label>
         <ContactInput type="text" name="form-name" />
-        <label>Your e-mail</label>
+        <label htmlFor="e-mail">Your e-mail</label>
         <ContactInput name="email" type="email" />
-        <label>Message</label>
+        <label htmlFor="message">Message</label>
         <ContactTextarea rows="8" name="message" required />
         <SubmitButton>SUBMIT</SubmitButton>
       </ContactForm>

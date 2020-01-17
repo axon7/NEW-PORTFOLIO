@@ -26,9 +26,15 @@ const ProjectCard = styled.div`
 `
 
 const Description = styled.p`
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   line-height: 1.5em;
   text-align: justify;
+`
+const Utilized = styled.p`
+  font-weight: 600;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  text-align: center;
 `
 
 const Image = styled.img`
@@ -38,7 +44,7 @@ const Image = styled.img`
 `
 const Project = props => (
   <>
-    <ProjectCard>
+    <ProjectCard id="projects">
       <h1 style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}>
         {props.title}
       </h1>
@@ -46,6 +52,7 @@ const Project = props => (
         <Image src={props.image} alt="implanty" />
       </ProjectLink>
       <Description>{props.text}</Description>
+      <Utilized>{props.utilized}</Utilized>
       <ButtonLink href={props.linkGithub}>GITHUB</ButtonLink>
       <ButtonLink href={props.linkGithub}>LIVE DEMO</ButtonLink>
     </ProjectCard>

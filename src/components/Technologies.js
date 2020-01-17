@@ -21,7 +21,7 @@ const StyledIcon = styled.img`
   height: 50px;
 `
 const StyledIconAndText = styled.div`
-  margin: 20px;
+  margin: 10px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -36,6 +36,10 @@ const StyledTechnologies = styled.div`
   align-items: center;
   flex-wrap: wrap;
 `
+const Title = styled.p`
+  margin-top: 10px;
+  font-weight: 600;
+`
 const Technologies = () => {
   return (
     <Wrapper>
@@ -43,35 +47,35 @@ const Technologies = () => {
       <StyledTechnologies>
         <StyledIconAndText>
           <StyledIcon src={html5} />
-          <p>HTML5</p>
+          <Title>HTML5</Title>
         </StyledIconAndText>
         <StyledIconAndText>
           <StyledIcon src={css} />
-          <p>CSS3</p>
+          <Title>CSS3</Title>
         </StyledIconAndText>
         <StyledIconAndText>
           <StyledIcon src={javascript} />
-          <p>Javascript</p>
+          <Title>Javascript</Title>
         </StyledIconAndText>
         <StyledIconAndText>
           <StyledIcon src={react} />
-          <p>React</p>
+          <Title>React</Title>
         </StyledIconAndText>
         <StyledIconAndText>
           <StyledIcon src={redux} />
-          <p>Redux</p>
+          <Title>Redux</Title>
         </StyledIconAndText>
         <StyledIconAndText>
           <StyledIcon src={nodejs} />
-          <p>Node.js</p>
+          <Title>Node.js</Title>
         </StyledIconAndText>
         <StyledIconAndText>
           <StyledIcon src={jest} />
-          <p>Jest</p>
+          <Title>Jest</Title>
         </StyledIconAndText>
         <StyledIconAndText>
           <StyledIcon src={gatsby} />
-          <p>Gatsby</p>
+          <Title>Gatsby</Title>
         </StyledIconAndText>
       </StyledTechnologies>
     </Wrapper>

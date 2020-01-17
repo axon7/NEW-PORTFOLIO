@@ -3,7 +3,7 @@ import styled from "styled-components"
 import SEO from "./seo"
 import Button from "./Button"
 import lightning from "../images/lightning.svg"
-import { Link, animateScroll as scroll } from "react-scroll"
+import { Link } from "react-scroll"
 
 const StyledMain = styled.main`
   width: 100%;

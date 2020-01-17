@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import styled from "styled-components"
-// import { Link } from "gatsby"
-import { Link, animateScroll as scroll } from "react-scroll"
+import { Link } from "react-scroll"
 
 const StyledHeader = styled.div`
   width: 100%;

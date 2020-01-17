@@ -6,7 +6,6 @@ import weatherapp from "../images/weatherapp.png"
 import chatuchatu from "../images/chatu-chatu.png"
 import Project from "./Project"
 import comingsoon from "../images/comingsoon.jpg"
-import ButtonLink from "./ButtonLink"
 
 const StyledWrapper = styled.div`
   margin-top: 20px;

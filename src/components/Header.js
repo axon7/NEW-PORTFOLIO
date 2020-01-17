@@ -4,7 +4,7 @@ import { Link } from "react-scroll"
 
 const StyledHeader = styled.div`
   width: 100%;
-  height: 50px;
+  height: 3em;
   position: fixed;
   z-index: 2;
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
@@ -14,7 +14,7 @@ const StyledHeader = styled.div`
 
 const StyledBurger = styled.button`
   position: absolute;
-  top: 10px;
+  top: 8px;
   right: 10px;
   display: flex;
   flex-direction: column;

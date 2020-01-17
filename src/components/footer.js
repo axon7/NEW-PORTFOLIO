@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 import { FaLinkedin, FaGithub } from "react-icons/fa"

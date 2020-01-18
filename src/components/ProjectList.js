@@ -1,11 +1,11 @@
 import React from "react"
 import styled from "styled-components"
-import implanty24 from "../images/implanty24.png"
-import chingustore from "../images/chingustore.png"
-import weatherapp from "../images/weatherapp.png"
-import chatuchatu from "../images/chatu-chatu.png"
+import implanty24 from "../images/projectimages/implanty24.png"
+import chingustore from "../images/projectimages/chingustore.png"
+import weatherapp from "../images/projectimages/WeatherApp.png"
+import chatuchatu from "../images/projectimages/chatu-chatu.png"
 import Project from "./Project"
-import comingsoon from "../images/comingsoon.jpg"
+import comingsoon from "../images/projectimages/comingsoon.jpg"
 
 const StyledWrapper = styled.div`
   margin-top: 20px;

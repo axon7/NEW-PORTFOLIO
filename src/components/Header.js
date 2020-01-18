@@ -84,7 +84,11 @@ const Header = () => {
   const [open, setOpen] = useState(false)
   return (
     <StyledHeader>
-      <StyledBurger open={open} onClick={() => setOpen(!open)}>
+      <StyledBurger
+        aria-label="toggle menu"
+        open={open}
+        onClick={() => setOpen(!open)}
+      >
         <div />
         <div />
         <div />

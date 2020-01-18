@@ -46,35 +46,35 @@ const Technologies = () => {
       <h2>Current stack:</h2>
       <StyledTechnologies>
         <StyledIconAndText>
-          <StyledIcon src={html5} />
+          <StyledIcon src={html5} alt="HTML5" />
           <Title>HTML5</Title>
         </StyledIconAndText>
         <StyledIconAndText>
-          <StyledIcon src={css} />
+          <StyledIcon src={css} alt="CSS3" />
           <Title>CSS3</Title>
         </StyledIconAndText>
         <StyledIconAndText>
-          <StyledIcon src={javascript} />
+          <StyledIcon src={javascript} alt="Javascript" />
           <Title>Javascript</Title>
         </StyledIconAndText>
         <StyledIconAndText>
-          <StyledIcon src={react} />
+          <StyledIcon src={react} alt="React" />
           <Title>React</Title>
         </StyledIconAndText>
         <StyledIconAndText>
-          <StyledIcon src={redux} />
+          <StyledIcon src={redux} alt="Redux" />
           <Title>Redux</Title>
         </StyledIconAndText>
         <StyledIconAndText>
-          <StyledIcon src={nodejs} />
+          <StyledIcon src={nodejs} alt="Node.js" />
           <Title>Node.js</Title>
         </StyledIconAndText>
         <StyledIconAndText>
-          <StyledIcon src={jest} />
+          <StyledIcon src={jest} alt="Jest" />
           <Title>Jest</Title>
         </StyledIconAndText>
         <StyledIconAndText>
-          <StyledIcon src={gatsby} />
+          <StyledIcon src={gatsby} alt="Gatsby" />
           <Title>Gatsby</Title>
         </StyledIconAndText>
       </StyledTechnologies>

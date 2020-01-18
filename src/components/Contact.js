@@ -54,6 +54,7 @@ const Contact = () => {
         </span>
       </p>
       <ContactForm
+        action="/thank-you"
         name="contact"
         method="post"
         data-netlify="true"

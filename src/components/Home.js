@@ -10,10 +10,10 @@ const StyledMain = styled.main`
   background-color: #ff9e2c;
   height: 100%;
   color: black;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-items: center;
+  justify-items: center; */
   text-align: left;
   transform: skew(0deg, -8deg);
   margin-top: -150px;
@@ -29,15 +29,21 @@ const Content = styled.div`
   padding-bottom: 100px;
 `
 const Text = styled.div`
+  width: 80%;
   text-align: left;
-  width: 69%;
+  width: 100%;
+  padding: 0 13%;
   margin-bottom: 50px;
   margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `
 
 const Intro = styled.p`
-  width: 63%;
   line-height: 1.5em;
+  align-self: flex-start;
+  max-width: 359px;
 `
 const Lightning = styled.img`
   margin-top: 50px;
@@ -46,6 +52,8 @@ const Lightning = styled.img`
 `
 
 const StyledH1 = styled.h1`
+  width: 100%;
+
   font-weight: 900;
   font-size: 2.6em;
   word-break: keep-all;
@@ -54,6 +62,8 @@ const StyledH1 = styled.h1`
 `
 
 const DevTitle = styled.p`
+  text-align: left;
+  width: 100%;
   color: white;
   font-weight: 600;
   margin-bottom: 18px;

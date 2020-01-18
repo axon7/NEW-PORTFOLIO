@@ -60,6 +60,7 @@ const StyledLink = styled(Link)`
   font-size: 2em;
   margin: 10px;
   font-weight: bold;
+  cursor: pointer;
 `
 
 const StyledNav = styled.nav`

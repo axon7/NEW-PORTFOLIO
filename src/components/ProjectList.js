@@ -73,7 +73,7 @@ const ProjectList = () => (
         title="IMPLANTY24"
         link="https://xd.adobe.com/view/02de1ca6-9b0d-4353-69ad-f2ed4e7a7cf0-74ef/?fullscreen"
         image={implanty24}
-        text="Website desktop prototype for dental clinic"
+        text="Website desktop prototype for dental clinic. It was my first time with Adobe XD"
         utilized="Adobe XD"
       />
     </ProjectsList>

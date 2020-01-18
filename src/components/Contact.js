@@ -54,14 +54,14 @@ const Contact = () => {
         </span>
       </p>
       <ContactForm
-        // action="/thank-you"
+        action="/thank-you"
         name="contact"
         method="post"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
       >
         <input type="hidden" name="form-name" value="contact" />
-
+        <input type="hidden" name="bot-field" />
         <label htmlFor="name">Name</label>
         <ContactInput type="text" name="form-name" />
         <label htmlFor="e-mail">Your e-mail</label>

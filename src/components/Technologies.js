@@ -27,6 +27,10 @@ const StyledIconAndText = styled.div`
   flex-direction: column;
   align-items: center;
   width: 33%;
+
+  @media (min-width: 768px) {
+    width: 20%;
+  }
 `
 
 const StyledTechnologies = styled.div`

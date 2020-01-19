@@ -17,16 +17,30 @@ const ContactForm = styled.form`
   flex-direction: column;
 `
 const ContactInput = styled.input`
-  border: 2px solid #00499b;
+  border: 0px;
+  background-color: #e8f0fe;
   margin-bottom: 10px;
   padding: 0.5rem;
-  border-radius: 8px;
+  /* border-radius: 8px; */
+  font-family: "Montserrat";
+  ::placeholder {
+    font-family: "Montserrat";
+    color: black;
+    font-size: 1em;
+  }
 `
 
 const ContactTextarea = styled.textarea`
-  border: 2px solid #00499b;
+  background-color: #e8f0fe;
+  border: 0px;
+  font-family: "Montserrat";
+  padding: 8px;
   line-height: 1.15;
-  border-radius: 8px;
+  ::placeholder {
+    font-family: "Montserrat";
+    color: black;
+    font-size: 1em;
+  }
 `
 
 const SubmitButton = styled.button`
@@ -36,6 +50,7 @@ const SubmitButton = styled.button`
   background-color: #00499b;
   box-shadow: 0 10px 40px -15px black;
   color: white;
+  font-size: 1.1em;
   &:hover {
     cursor: pointer;
   }
@@ -61,11 +76,14 @@ const Contact = () => {
         data-netlify-honeypot="bot-field"
       >
         <input type="hidden" name="form-name" value="contact-form" />
-        <label htmlFor="name">Name</label>
-        <ContactInput name="name" placeholder="Your Name" type="text" />
-        <label htmlFor="e-mail">Your e-mail</label>
-        <ContactInput name="email" placeholder="name@name.com" type="email" />
-        <ContactTextarea rows="8" name="message" required />
+        <ContactInput name="name" type="text" placeholder="Name" />
+        <ContactInput name="email" type="email" placeholder="E-mail" />
+        <ContactTextarea
+          rows="6"
+          name="message"
+          required
+          placeholder="Message"
+        />
         <SubmitButton>SUBMIT</SubmitButton>{" "}
       </ContactForm>
     </StyledContactPage>

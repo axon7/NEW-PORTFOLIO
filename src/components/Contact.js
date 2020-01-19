@@ -78,6 +78,7 @@ const Contact = () => {
       >
         <input type="hidden" name="form-name" value="contact-form" />
         <ContactInput name="name" placeholder="Your Name" type="text" />
+        <ContactInput name="email" placeholder="name@name.com" type="email" />
         {/* <p>
           <label>
             E-mail

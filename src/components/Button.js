@@ -16,6 +16,9 @@ const Button = styled.button`
 
   &:hover {
     cursor: pointer;
+
+    transition: 0.2s;
+    transform: scale(1.2);
   }
 `
 

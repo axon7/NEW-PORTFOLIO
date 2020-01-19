@@ -52,6 +52,10 @@ const StyledBurger = styled.button`
       transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
     }
   }
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
 `
 
 const StyledLink = styled(Link)`
@@ -61,6 +65,14 @@ const StyledLink = styled(Link)`
   margin: 10px;
   font-weight: bold;
   cursor: pointer;
+  @media (min-width: 1024px) {
+    font-size: 1.2em;
+    padding: 10px;
+    :hover {
+      transition: 0.2s;
+      transform: scale(1.2);
+    }
+  }
 `
 
 const StyledNav = styled.nav`
@@ -78,6 +90,14 @@ const StyledNav = styled.nav`
 
   /* transform: translateX(-100%); */
   transform: ${({ open }) => (open ? "translateY(0)" : "translateY(-100%)")};
+
+  @media (min-width: 1024px) {
+    transform: translateY(0);
+    flex-direction: row;
+    height: 3em;
+    justify-content: flex-end;
+    padding-right: 8px;
+  }
 `
 
 const Header = () => {

@@ -76,7 +76,9 @@ const Contact = () => {
         data-netlify="true"
         data-netlify-honeypot="bot-field"
       >
+        <label>Name</label>
         <ContactInput name="name" placeholder="Your Name" type="text" />
+        <label>e-mail</label>
         <ContactInput name="email" placeholder="name@name.com" type="email" />
         <ContactTextarea rows="8" name="message" required />
         <SubmitButton>SUBMIT</SubmitButton>{" "}

@@ -35,7 +35,7 @@ const Text = styled.div`
   flex-direction: column;
   align-items: flex-start;
   width: 92vw;
-  max-width: 945px;
+  max-width: 948px;
   margin: 0 auto;
 `
 
@@ -43,6 +43,10 @@ const Intro = styled.p`
   line-height: 1.5em;
   align-self: flex-start;
   max-width: 359px;
+  @media (min-width: 1024px) {
+    font-size: 1.3em;
+    margin-bottom: 12%;
+  }
 `
 const Lightning = styled.img`
   display: flex;
@@ -58,15 +62,21 @@ const StyledH1 = styled.h1`
   word-break: keep-all;
   margin-bottom: 0px;
   text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+  @media (min-width: 1024px) {
+    font-size: 5.6rem;
+  }
 `
 
 const DevTitle = styled.p`
   text-align: left;
   width: 100%;
   color: white;
-  font-weight: 600;
+  font-weight: 800;
   margin-bottom: 18px;
   margin-top: -2px;
+  @media (min-width: 1024px) {
+    font-size: 1.3em;
+  }
 `
 const Home = () => {
   return (

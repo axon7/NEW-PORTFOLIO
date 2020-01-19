@@ -53,20 +53,33 @@ const Contact = () => {
           😉
         </span>
       </p>
-
+      {/* <ContactForm
+        action="/thank-you"
+        name="contact"
+        method="post"
+        netlify="true"
+        netlify-honeypot="bot-field"
+      >
+        <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="bot-field" />
+        <label htmlFor="name">Name</label>
+        <ContactInput type="text" name="form-name" />
+        <label htmlFor="e-mail">Your e-mail</label>
+        <ContactInput name="email" type="email" />
+        <label htmlFor="message">Message</label>
+        <ContactTextarea rows="8" name="message" required />
+        <SubmitButton>SUBMIT</SubmitButton>
+      </ContactForm> */}
       <ContactForm
         name="contact-form"
         method="post"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
       >
-        <label htmlFor="name">Name</label>
-        <ContactInput type="text" name="name" />
-        <label htmlFor="e-mail">Your e-mail</label>
-        <ContactInput name="email" type="email" />
-        <label htmlFor="message">Message</label>
-        <ContactTextarea rows="8" name="message" required />
-        <SubmitButton>SUBMIT</SubmitButton>{" "}
+        <input name="name" placeholder="Your Name" type="text" />
+        <input name="email" placeholder="name@name.com" type="email" />
+        <textarea name="message" />
+        <button>Send</button>
       </ContactForm>
     </StyledContactPage>
   )

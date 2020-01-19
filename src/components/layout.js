@@ -5,7 +5,7 @@ import Footer from "./footer"
 import Header from "./Header"
 
 const GlobalStyle = createGlobalStyle`
-/* @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,800&display=swap');
 body {
     padding: 0;
     margin: 0;

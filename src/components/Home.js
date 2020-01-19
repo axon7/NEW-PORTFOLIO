@@ -29,15 +29,16 @@ const Content = styled.div`
   padding-bottom: 100px;
 `
 const Text = styled.div`
-  width: 80%;
   text-align: left;
-  width: 100%;
+
   padding: 0 13%;
-  margin-bottom: 50px;
-  margin-top: 50px;
+
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  width: 92vw;
+  max-width: 1140px;
+  margin: 0 auto;
 `
 
 const Intro = styled.p`
@@ -46,9 +47,9 @@ const Intro = styled.p`
   max-width: 359px;
 `
 const Lightning = styled.img`
-  margin-top: 50px;
   display: flex;
   align-self: flex-end;
+  margin-top: 70px;
 `
 
 const StyledH1 = styled.h1`

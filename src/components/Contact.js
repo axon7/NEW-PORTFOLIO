@@ -76,12 +76,7 @@ const Contact = () => {
         data-netlify="true"
         data-netlify-honeypot="bot-field"
       >
-        <p>
-          <label>
-            Name
-            <ContactInput name="name" placeholder="Your Name" type="text" />
-          </label>
-        </p>
+        <ContactInput name="name" placeholder="Your Name" type="text" />
         {/* <p>
           <label>
             E-mail

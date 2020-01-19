@@ -82,7 +82,7 @@ const Contact = () => {
             <ContactInput name="name" placeholder="Your Name" type="text" />
           </label>
         </p>
-        <p>
+        {/* <p>
           <label>
             E-mail
             <ContactInput
@@ -91,7 +91,7 @@ const Contact = () => {
               type="email"
             />
           </label>
-        </p>
+        </p> */}
         <ContactTextarea rows="8" name="message" required />
         <SubmitButton>SUBMIT</SubmitButton>{" "}
       </ContactForm>

@@ -11,7 +11,7 @@ body {
     margin: 0;
     color: black;
     height: 100%;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', Arial, sans-serif;
     
   }
   html, * {

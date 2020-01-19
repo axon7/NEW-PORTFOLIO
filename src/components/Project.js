@@ -4,9 +4,7 @@ import ButtonLink from "./ButtonLink"
 const ProjectLink = styled.a`
   margin-bottom: 2rem;
   margin-top: 20px;
-  &:nth-child(1) {
-    /* margin-top: 2rem; */
-  }
+
   :hover {
     opacity: 0.6;
     transition: 0.2s;
@@ -15,6 +13,7 @@ const ProjectLink = styled.a`
 
   @media (min-width: 1024px) {
     margin-left: 20px;
+    width: 65%;
   }
 `
 
@@ -40,7 +39,7 @@ const Description = styled.p`
   max-width: 500px;
 
   @media (min-width: 1024px) {
-    margin-right: 20px;
+    font-size: 1.1em;
   }
 `
 const Utilized = styled.p`
@@ -48,12 +47,15 @@ const Utilized = styled.p`
   font-size: 0.8em;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: 1024px) {
+    font-size: 1em;
+  }
 `
 
 const Image = styled.img`
   box-shadow: 0px 12px 9px 0px rgba(0, 0, 0, 0.33);
   width: 100%;
-  max-width: 412px;
 `
 
 const ImageAndText = styled.div`
@@ -75,8 +77,13 @@ const Project = props => (
         <div>
           <Description>{props.text}</Description>
           <Utilized>{props.utilized}</Utilized>
-          <ButtonLink href={props.linkGithub}>GITHUB</ButtonLink>
-          <ButtonLink href={props.linkGithub}>LIVE DEMO</ButtonLink>
+          {props.linkGithub ? (
+            <ButtonLink href={props.linkGithub}>GITHUB</ButtonLink>
+          ) : null}
+
+          {props.link ? (
+            <ButtonLink href={props.link}>LIVE DEMO</ButtonLink>
+          ) : null}
         </div>
       </ImageAndText>
     </ProjectCard>

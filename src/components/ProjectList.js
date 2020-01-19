@@ -9,8 +9,6 @@ import comingsoon from "../images/projectimages/comingsoon.jpg"
 
 const StyledWrapper = styled.div`
   margin-top: 20px;
-  width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +20,7 @@ const ProjectsList = styled.section`
   justify-items: center;
   flex-direction: column;
   height: 100%;
-  margin: 10%;
+  margin: 3% 10%;
 `
 
 // const ProjectDescription = styled.div``
@@ -39,26 +37,26 @@ const ProjectList = () => (
         utilized="React - Redux - MaterialUI - React-Router - ZenHub"
         text="Application fetches clothes data from ASOS.com API. User can
         search by name, sort, load more items and add them to the basket.
-        Chingu Store was created in the team of 3 people. I learned a lot about Git workflow and project management.
+        Chingu Store was created in the team of 3 people. I learned a lot about Git workflow and project management. 
+        
         ⚠ Live demo currently offline"
       />
       <Project
         title="Album Reviews - full-stack"
         image={comingsoon}
         link=""
-        linkGithub=""
-        text="Full-stack application where users can add rate and write review for an music album. "
+        linkGithub="https://github.com/axon7/AlbumReviews"
+        text="Full-stack application where users can add rate and write review for an music album. App is using Deezer API to fetch albums"
         utilized="React - Redux - Node.js - MongoDB - Express.js"
       />
       <Project
         title="Chatu-chatu"
-        utilized="React, socket.io, Node.js, styled-components"
+        utilized="React - socket.io - Node.js - styled-components"
         image={chatuchatu}
         link="http://chatu-chatu.herokuapp.com/"
         linkGithub="https://github.com/axon7/chatu-chatu"
         text="Real-time chat with use of Node.js. Sockets provides a communication channel between
-        a client and a server.
-        Utilized: React - socket.io - Node.js - styled-components"
+        a client and a server."
       />
       <Project
         title="Weather App"

@@ -68,7 +68,7 @@ const Contact = () => {
         <ContactInput name="email" type="email" />
         <label htmlFor="message">Message</label>
         <ContactTextarea rows="8" name="message" required />
-        <SubmitButton>SUBMIT</SubmitButton>
+       
       </ContactForm> */}
       <ContactForm
         name="contact-form"
@@ -78,8 +78,8 @@ const Contact = () => {
       >
         <ContactInput name="name" placeholder="Your Name" type="text" />
         <ContactInput name="email" placeholder="name@name.com" type="email" />
-        <textarea name="message" />
-        <button>Send</button>
+        <ContactTextarea rows="8" name="message" required />
+        <SubmitButton>SUBMIT</SubmitButton>{" "}
       </ContactForm>
     </StyledContactPage>
   )

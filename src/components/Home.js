@@ -30,14 +30,12 @@ const Content = styled.div`
 `
 const Text = styled.div`
   text-align: left;
-
-  padding: 0 13%;
-
+  padding: 0 11%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   width: 92vw;
-  max-width: 1140px;
+  max-width: 945px;
   margin: 0 auto;
 `
 

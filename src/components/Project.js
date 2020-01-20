@@ -8,7 +8,11 @@ const ProjectLink = styled.a`
 
   :hover {
     opacity: 0.6;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s;
+    -webkit-transform: scale(0.98);
+    -ms-transform: scale(0.98);
     transform: scale(0.98);
   }
 
@@ -26,6 +30,8 @@ const ProjectCard = styled.div`
   margin-bottom: 50px;
   border-radius: 15px;
   width: 100%;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 
   @media (min-width: 1024px) {
@@ -55,13 +61,19 @@ const Utilized = styled.p`
 `
 
 const Image = styled.img`
+  -webkit-box-shadow: 0px 12px 9px 0px rgba(0, 0, 0, 0.33);
   box-shadow: 0px 12px 9px 0px rgba(0, 0, 0, 0.33);
   width: 100%;
 `
 
 const ImageAndText = styled.div`
   @media (min-width: 1024px) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     display: -webkit-flex;
   }

@@ -7,18 +7,24 @@ const StyledHeader = styled.div`
   height: 3em;
   position: fixed;
   z-index: 2;
+  -webkit-box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
   background: #ff9e2c;
-  /* background-color: black; */
 `
 
 const StyledBurger = styled.button`
   position: absolute;
   top: 8px;
   right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   display: -webkit-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   width: 2rem;
   height: 2rem;
@@ -37,8 +43,12 @@ const StyledBurger = styled.button`
     height: 0.25rem;
     background: white;
     border-radius: 10px;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
     position: relative;
+    -webkit-transform-origin: 1px;
+    -ms-transform-origin: 1px;
     transform-origin: 1px;
     :first-child {
       transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
@@ -70,13 +80,19 @@ const StyledLink = styled(Link)`
     font-size: 1.2em;
     padding: 10px;
     :hover {
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
       transition: 0.2s;
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
       transform: scale(1.2);
     }
   }
 `
 
 const StyledNav = styled.nav`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 100vh;
@@ -84,18 +100,36 @@ const StyledNav = styled.nav`
   display: -webkit-flex;
   z-index: 9;
   background-color: orange;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 
   /* transform: translateX(-100%); */
   transform: ${({ open }) => (open ? "translateY(0)" : "translateY(-100%)")};
 
   @media (min-width: 1024px) {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
     transform: translateY(0);
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     height: 3em;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
     padding-right: 8px;
   }

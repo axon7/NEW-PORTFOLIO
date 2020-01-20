@@ -17,6 +17,7 @@ const StyledBurger = styled.button`
   top: 8px;
   right: 10px;
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
   justify-content: space-around;
   width: 2rem;
@@ -80,7 +81,7 @@ const StyledNav = styled.nav`
   width: 100%;
   height: 100vh;
   position: fixed;
-  /* display: none; */
+  display: -webkit-flex;
   z-index: 9;
   background-color: orange;
   flex-direction: column;

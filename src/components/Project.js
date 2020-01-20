@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import ButtonLink from "./ButtonLink"
+
 const ProjectLink = styled.a`
   margin-bottom: 2rem;
   margin-top: 20px;
@@ -62,6 +63,7 @@ const ImageAndText = styled.div`
   @media (min-width: 1024px) {
     flex-direction: row-reverse;
     display: flex;
+    display: -webkit-flex;
   }
 `
 const Project = props => (

@@ -12,6 +12,7 @@ const ButtonLink = styled.a`
     cursor: pointer;
   }
   display: flex;
+  display: -webkit-flex;
   justify-content: center;
 `
 

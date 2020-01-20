@@ -10,10 +10,6 @@ const StyledMain = styled.main`
   background-color: #ff9e2c;
   height: 100%;
   color: black;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center; */
   text-align: left;
   transform: skew(0deg, -8deg);
   margin-top: -150px;
@@ -21,6 +17,7 @@ const StyledMain = styled.main`
 
 const Content = styled.div`
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
   align-items: center;
   justify-items: center;
@@ -32,6 +29,7 @@ const Text = styled.div`
   text-align: left;
   padding: 0 11%;
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
   align-items: flex-start;
   width: 92vw;
@@ -50,6 +48,7 @@ const Intro = styled.p`
 `
 const Lightning = styled.img`
   display: flex;
+  display: -webkit-flex;
   align-self: flex-end;
   margin-top: 70px;
 `

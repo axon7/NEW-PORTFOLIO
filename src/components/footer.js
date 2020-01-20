@@ -8,6 +8,7 @@ const StyledFooter = styled.footer`
   width: 100%;
   color: white;
   display: flex;
+  display: -webkit-flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -17,6 +18,7 @@ const StyledFooter = styled.footer`
 const StyledIconsDiv = styled.div`
   font-size: 50px;
   display: flex;
+  display: -webkit-flex;
   justify-items: center;
   align-items: center;
   max-width: 600px;

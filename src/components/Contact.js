@@ -6,6 +6,7 @@ const StyledContactPage = styled.div`
   padding: 50px 13%;
   width: 100%;
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
   align-items: center;
 `
@@ -14,6 +15,7 @@ const ContactForm = styled.form`
   width: 75vw;
   max-width: 30em;
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
 `
 const ContactInput = styled.input`

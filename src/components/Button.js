@@ -5,6 +5,7 @@ const Button = styled.button`
   height: 40px;
   margin: 20px;
   display: flex;
+  display: -webkit-flex;
   justify-content: center;
   align-items: center;
   padding: 23px;

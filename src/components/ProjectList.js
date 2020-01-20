@@ -10,12 +10,14 @@ import comingsoon from "../images/projectimages/comingsoon.jpg"
 const StyledWrapper = styled.div`
   margin-top: 20px;
   display: flex;
+  display: -webkit-flex;
   justify-content: center;
   align-items: center;
 `
 
 const ProjectsList = styled.section`
   display: flex;
+  display: -webkit-flex;
   align-items: center;
   justify-items: center;
   flex-direction: column;
